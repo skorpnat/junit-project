@@ -7,7 +7,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.ValueSource;
 import pages.DividendsSearchPage;
 
-@DisplayName("Тесты на проверку поиска акций по наименованию с дивидендами")
+@DisplayName("Тесты на проверку поиска акций с дивидендами по наименованию ")
 public class SearchTest extends TestBase {
     DividendsSearchPage dividendsSearchPage = new DividendsSearchPage();
 
