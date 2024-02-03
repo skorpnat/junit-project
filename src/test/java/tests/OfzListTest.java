@@ -37,7 +37,7 @@ public class OfzListTest extends TestBase {
         step("Открыть форму", () ->
                 open("/q/ofz"));
 
-        step("Проверить присутствие ссылки", () -> {
+        step("Проверить присутствие ссылки и нажать на нее", () -> {
             mainOfzPage.ofzLink.shouldBe(Condition.visible);
             mainOfzPage.ofzLink.click();
         });

@@ -36,7 +36,7 @@ public class OfzTest extends TestBase {
         step("Открыть форму", () ->
                 open("/q/bonds/SU26243RMFS4/"));
 
-        step("Проверить пристувие кнопок", () -> {
+        step("Проверить присутствие кнопок", () -> {
             ofzPage.buyShares.shouldBe(Condition.visible);
             assertThat(ofzPage.buyShares.getText()).isEqualTo("Купить облигации");
             ofzPage.discussShares.shouldBe(Condition.visible);
@@ -53,7 +53,7 @@ public class OfzTest extends TestBase {
 
         $(byText("Календарь выплаты купонов по облигации ОФЗ 26243 (SU26243RMFS4)")).scrollTo();
 
-        step("Проверить пристувие блока с календарем купонов", () ->
+        step("Проверить присутствие блока с календарем купонов", () ->
             ofzPage.calendarTable.shouldBe(Condition.visible));
 
         $(byText("Изменение цены и доходности облигации ОФЗ 26243 (SU26243RMFS4)")).scrollTo();

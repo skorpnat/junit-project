@@ -37,7 +37,7 @@ tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
 
-test {
+tasks.withType(Test) {
     useJUnitPlatform()
 
     testLogging {
@@ -45,11 +45,5 @@ test {
             events "started", "skipped", "failed", "standard_error", "standard_out"
             exceptionFormat "short"
         }
-    }
-}
-
-task ui_test(type: Test) {
-    useJUnitPlatform {
-        includeTags("UI")
     }
 }
