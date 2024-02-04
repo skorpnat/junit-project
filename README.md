@@ -24,3 +24,20 @@
 
 <img title="Allure Tests" src="images/screenshots/testcase.jpg">
 </p>
+
+### Уведомление из переписки с чат ботом
+
+
+<p align="center">
+<img src="images/screenshots/telegram.jpg" alt="Telegram screen" width="500" height="400">
+</p>
+
+
+#### Содержание уведомления в Telegram
+
+- [x] Окружение
+- [x] Комментарий
+- [x] Длительность прохождения тестов
+- [x] Общее количество сценариев
+- [x] Процент прохождения тестов
+- [x] Ссылка на Allure отчет
