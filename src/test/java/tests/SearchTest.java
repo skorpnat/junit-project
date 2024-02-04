@@ -1,12 +1,13 @@
 package tests;
 
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.ValueSource;
 import pages.DividendsSearchPage;
-
+@Tag("search")
 @DisplayName("Тесты на проверку поиска акций по наименованию с дивидендами")
 public class SearchTest extends TestBase {
     DividendsSearchPage dividendsSearchPage = new DividendsSearchPage();

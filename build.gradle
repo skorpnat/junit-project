@@ -48,3 +48,14 @@ tasks.withType(Test) {
         }
     }
 }
+task ui_test(type: Test) {
+    useJUnitPlatform {
+        includeTags("UI")
+    }
+}
+
+task search_test(type: Test) {
+    useJUnitPlatform {
+        includeTags("search")
+    }
+}
