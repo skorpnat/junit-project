@@ -22,7 +22,7 @@ public class OfzListTest extends TestBase {
     @DisplayName("Проверка заголовка на странице котировок ОФЗ")
     void checkOfzTitleOnThePage() {
         step("Открыть форму", () ->
-                open("q/ofz/"));
+                open("/q/ofz/"));
 
         step("Проверить заголовок на странице", () -> {
             mainOfzPage.pageTitle.shouldBe(Condition.visible);
@@ -30,7 +30,7 @@ public class OfzListTest extends TestBase {
         });
     }
     @Test
-    @Feature("Сптсок ОФЗ")
+    @Feature("Список ОФЗ")
     @DisplayName("Проверка перехода на страницу с описанием ОФЗ по клику")
 
     void checkLinkToOfzPage() {
