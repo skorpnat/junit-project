@@ -2,13 +2,14 @@ package pages;
 
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.collections.SizeGreaterThan;
+import tests.TestBase;
 
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
 
 public class DividendsSearchPage {
-    public SelenideElement searchInput = $("#dividends_search_form input");
+    public SelenideElement searchInput = $x("//div[@class='dividends_search__input']//input[@class='dividends_field']");
 
     public DividendsSearchPage openPage(String s) {
         open("/dividends");
@@ -17,6 +18,10 @@ public class DividendsSearchPage {
 
     public DividendsSearchPage setSearchValue(String value) {
         searchInput.setValue(value);
+        return this;
+    }
+    public DividendsSearchPage setSearchValueClick(String value) {
+        searchInput.setValue(value).pressEnter();
         return this;
     }
 
