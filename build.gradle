@@ -43,6 +43,10 @@ tasks.withType(JavaCompile) {
 }
 
 tasks.withType(Test) {
+    systemProperties(System.getProperties())
+}
+
+tasks.withType(Test) {
     useJUnitPlatform()
 
     testLogging {
@@ -58,8 +62,8 @@ task ui_test(type: Test) {
     }
 }
 
-//task search_test(type: Test) {
-//    useJUnitPlatform {
-//        includeTags("search")
-//    }
-//}
+task search_test(type: Test) {
+    useJUnitPlatform {
+        includeTags("search")
+    }
+}
