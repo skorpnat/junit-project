@@ -57,7 +57,7 @@ public class OfzTest extends TestBase {
             ofzPage.calendarTable.shouldBe(Condition.visible));
 
         $(byText("Изменение цены и доходности облигации ОФЗ 26243 (SU26243RMFS4)")).scrollTo();
-        step("Проверить пристувие блока с схемой Изменение цены и доходности облигации ОФЗ", () ->
+        step("Проверить присутствие блока с схемой Изменение цены и доходности облигации ОФЗ", () ->
             ofzPage.priceScheme.shouldBe(Condition.visible)
         );
 
