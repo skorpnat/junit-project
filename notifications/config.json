@@ -2,8 +2,7 @@
   "base": {
     "logo": "",
     "project": "${JOB_NAME}",
-    "environment": "${ENVIRONMENT_WEB}",
-    "task": "${TASK}",
+    "environment": "${ENVIRONMENT}",
     "reportLink": "${BUILD_URL}",
     "language": "en",
     "allureFolder": "allure-report",
