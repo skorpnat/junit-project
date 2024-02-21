@@ -50,3 +50,9 @@
 <img src="images/screenshots/JiraIntegration2.jpg" alt="Jira screen" width="1200" height="400">
 </p>
 
+### Пример видео выполнения теста 
+
+
+<p align="center">
+<img src="images/video/searchVideo.gif" alt="video example" width="550" height="350">
+</p>
